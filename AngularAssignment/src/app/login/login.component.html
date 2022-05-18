@@ -1,0 +1,11 @@
+<form #userForm="ngForm">
+    <div class="login-form">
+        <div class="form">
+            <h3>Login</h3>
+            <input type="text" class="username" placeholder="Username" name="username" [(ngModel)]="username" />
+            <input type="password" class="password" placeholder="Password" name="password" [(ngModel)]="password"/>
+            <button class="submit" (click)="validate()">Submit</button>
+        </div>
+    </div>
+</form>
+<!-- <app-welcome [user] = "username"></app-welcome> -->

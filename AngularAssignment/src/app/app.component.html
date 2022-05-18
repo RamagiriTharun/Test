@@ -1,0 +1,24 @@
+<br>
+<h1>Angular Basic Implementation</h1>
+<br>
+
+<div class="d-flex">
+    <ul ngbNav #nav="ngbNav" class="nav-pills" orientation="horizontal">
+        <li ngbNavItem="home" class="indent">
+            <a ngbNavLink routerLink="home">HOME</a> 
+        </li>
+        <li ngbNavItem="login" class="indent">
+            <a ngbNavLink routerLink="login">LOGIN</a>
+        </li>
+        <li ngbNavItem="all users" class="indent">
+            <a ngbNavLink routerLink="allusers">ALL USERS</a>
+        </li>
+    </ul>
+  
+    <div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>
+
+ 
+<br>
+<br>
+<router-outlet></router-outlet>
