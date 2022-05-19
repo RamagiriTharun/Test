@@ -18,16 +18,24 @@
   },
   "users": [
     {
-      "username" : "Tharun",
-      "password" : "Tharun1234"
+      "id": 1,
+      "username": "Tharun",
+      "password": "Tharun"
     },
     {
-      "username" : "Kiran",
-      "password" : "Kiran"
+      "id": 2,
+      "username": "Kiran",
+      "password": "Kiran"
     },
     {
-      "username" : "Dinesh",
-      "password" : "Dinesh"
+      "id": 3,
+      "username": "Dinesh",
+      "password": "Dinesh"
+    },
+    {
+      "username": "ayush",
+      "password": "ayush",
+      "id": 4
     }
   ]
 }

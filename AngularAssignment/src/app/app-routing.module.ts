@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     component : WelcomeComponent,
-    path : 'welcome'
+    path : 'welcome/:username'
   },
   {
     path: '', redirectTo: '/home', pathMatch: 'full'

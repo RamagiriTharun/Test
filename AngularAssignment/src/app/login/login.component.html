@@ -2,10 +2,14 @@
     <div class="login-form">
         <div class="form">
             <h3>Login</h3>
-            <input type="text" class="username" placeholder="Username" name="username" [(ngModel)]="username" />
-            <input type="password" class="password" placeholder="Password" name="password" [(ngModel)]="password"/>
-            <button class="submit" (click)="validate()">Submit</button>
+            <input type="text" class="username" placeholder="Username" name="username" required [(ngModel)]="username" />
+            <input type="password" class="password"  placeholder="Password" name="password" required [(ngModel)]="password"/>
+            <button class="submit" (click)="validate(userForm.value)">Submit</button>
         </div>
     </div>
 </form>
-<!-- <app-welcome [user] = "username"></app-welcome> -->
+<br>
+<br>
+
+<app-welcome *ngIf = "valid" [user] = "username"></app-welcome>
+<router-outlet></router-outlet>
